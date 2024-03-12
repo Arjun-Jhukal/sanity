@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Optimized App with JS Mastery",
-  description: "First Project with js mastery",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
