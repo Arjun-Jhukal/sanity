@@ -3,10 +3,33 @@ import { getResources, getResourcesPlaylist } from "../../../../sanity/action";
 import Filters from "@/components/organism/Filters";
 import ResourceCard from "@/components/molecules/ResourceCard";
 import SectionHeader from "@/components/molecules/SectionHeader";
+import { Metadata } from "next";
 
 interface Props {
   searchParams: { [key: string]: string | undefined };
 }
+
+export const metadata: Metadata = {
+  title: "Get the Free Frontend Developer Course at Developer Arjun.tech",
+  description: "",
+  other: {
+    "theme-color": "#0d1117",
+    "color-scheme": "dark only",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: {
+      url: "https://i.ibb.co/d6TXxB2/homepage-thumbnail.jpg",
+    },
+  },
+  openGraph: {
+    url: "arjunjhukal.com.np",
+    images: {
+      url: "https://i.ibb.co/d6TXxB2/homepage-thumbnail.jpg",
+    },
+    type: "website",
+  },
+};
 
 export const revalidate = 900;
 /* Since this is the server side page so this page will revalidate after every 15 minutes*/
