@@ -11,7 +11,7 @@ interface Props {
 
 export const metadata: Metadata = {
   title: "Get the Free Frontend Developer Course at Developer Arjun.tech",
-  description: "",
+  description: "Get the Free Frontend Developer Course at Developer Arjun.tech",
   other: {
     "theme-color": "#0d1117",
     "color-scheme": "dark only",
